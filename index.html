@@ -14,7 +14,7 @@
 </head>
 <body>
 <!--Header-->
-    <header class="bottom-line">
+    <header>
         <div class="header container">
             <a href="./index.html" class="logo-top logo">Web<span class="logo-color">Studio</span>
             </a>
@@ -53,7 +53,7 @@
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="order btn">Заказать услугу</button>
+            <button data-modal-open type="button" class="order btn">Заказать услугу</button>
         </div>
     </section> 
     <!--Advantage-->
@@ -524,5 +524,15 @@
         </div>
     </div>
 </footer>
+<div data-modal class="backdrop is-hidden">
+    <div class="modal">
+        <button type="button" class="modal-close btn" data-modal-close>
+            <svg class="modal-icon" width="11" height="11">
+                <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
